@@ -1,0 +1,51 @@
+document.getElementById("menubtn").onclick = e => {
+    e.preventDefault();
+    openMenu();
+}
+
+const openMenu = () => {
+     document.querySelector('.backdrop').className = 'backdrop active';
+     document.querySelector('aside').className = 'active';
+}
+
+const closeMenu = () => {
+    document.querySelector('.backdrop').className = 'backdrop';
+    document.querySelector('aside').className = '';
+}
+
+document.querySelector('aside button.close').onclick = e => {
+    closeMenu();
+}
+
+document.querySelector('.backdrop').onclick = e => {
+    closeMenu();
+}
+
+
+
+
+
+
+// document.getElementById("search").onclick = e => {
+//     e.preventDefault();
+//     openSearch();
+//     console.log("clicked search")
+// }
+
+// const openSearch = () => {
+//     document.querySelector('#search').innerHTML = '<input type="text" name="search" placeholder="Search here" >';
+//     document.querySelector('#search').className = ' fi fi-rr-search search search-active';
+
+// }
+
+// const closeSearch = () => {
+//     document.querySelector('.search-active').innerHTML = '';
+// }
+
+// document.querySelector('.search-active').onclick = e => {
+//     closeSearch();
+// }
+
+// document.querySelector('.backdrop').onclick = e => {
+//     closeSearch();
+// }

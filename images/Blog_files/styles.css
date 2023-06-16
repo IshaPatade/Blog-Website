@@ -1,0 +1,585 @@
+/* font-family: 'Anton', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    font-size: larger;
+    background-color:#9BCDD2;
+}
+
+header a {
+    color: inherit;
+}
+
+header nav a {
+    text-decoration-line: none;
+    padding: 5px 20px; 
+    font-weight: 300;
+}
+header nav a:hover{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+header nav.right {
+    text-align: right;
+}
+ 
+header nav.center{
+    text-align: center;
+}
+
+.desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .desktop {
+        display: initial;
+    }
+  
+}
+
+p.logo {
+    height: 8px;
+    width: 100px;
+    color: inherit;
+    margin-left: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: larger;
+    
+}
+.logo{
+    padding-bottom: 5px;
+}
+
+
+.orange{
+    color: #FF8551;
+}
+
+p.header{
+    padding-left: 50px;
+}
+
+.header{
+    font-size: 3rem;
+    padding: 70px ;
+    padding-top: 15vh;
+    background-color: #9BCDD2;
+}
+
+.search.active{
+    padding-left: 30px;
+    border: 1px solid;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10vh;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+
+.blogs{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin-right: 50px;
+    border-right: 1px solid darkgray ;
+    padding-right: 10px;
+}
+
+.segments{
+    margin:10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightside{
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.news{
+    padding-left: 25px;
+    padding-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #FAF0E4;
+    margin-bottom: 50px;
+}
+
+.blog{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid ;
+    border-color: darkgrey;
+    margin-top: 30px;
+}
+
+
+.leftblog{
+    width:40vw;
+}
+.segments p{
+    font-weight: 700;
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+    color:#FF8551;
+}
+p.subcontent{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(95, 95, 95);
+    margin-bottom: 30px;
+}
+p.title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+.author{
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: darkgrey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+p.content{
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 7px;
+    color: rgb(95, 95, 95);
+}
+
+p.info{
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom:4px ;
+    /* font-family: sans-serif; */
+    color: darkgrey;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img{
+     width:200px;
+     height:120px;
+     margin-left: 20px;
+}
+
+p.newst{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 30px;
+   
+}
+
+.newstitle{
+    font-weight: 700;
+    margin-bottom: 5px;
+    
+}
+
+p.newscontent{
+    font-weight: 300;
+    font-size: 1rem;
+ 
+    margin-bottom: 20px;
+    color: rgb(95, 95, 95);
+}
+
+.article a{
+    text-decoration: none;
+}
+
+.btn{
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.btn a{
+    background-color: burlywood;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.btn a:hover{
+    background-color: rgb(216, 145, 51);
+}
+
+.jobs{
+    position: fixed;
+}
+
+
+
+
+
+footer{
+    height:40vh;
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+.footer{
+   
+}
+
+p.footer{
+    font-size: 3rem;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+a.subscribe{
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+a.subscribe:hover{
+    background-color: rgb(168, 168, 168);
+    text-decoration: none;
+}
+
+.touch{
+    margin-top: 30px;
+}
+
+.media{
+   margin-top: 10px;
+}
+.media a{
+   color: white;
+   justify-content: space-between;
+   text-decoration: none;
+}
+
+
+
+
+
+
+aside{
+    position:fixed;
+    right:-290px;
+    transition: right 0.4s ease;
+    width:290px;
+    background-color: #fff;
+    padding: 80px 40px;
+    z-index: 4; 
+}
+
+aside.active{
+    right: 0;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+
+aside a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+aside button.close{
+    font-size: 24px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 100; 
+    cursor: pointer;
+}
+
+.backdrop{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.35);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 3;
+
+}
+
+.backdrop.active{
+    display: block;
+
+}
+
+
+
+
+
+
+/* phoneeeeeeeeeeeeeee */
+
+
+
+
+
+
+@media only screen and (max-width:900px){
+    .header{
+        font-size: 2rem;
+        width: 100vw;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 10vh;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    } 
+
+    div.container{
+        margin-left: 20px;
+    }
+    
+    .blogs{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        border: 0;
+    }
+    
+    .segments{
+        margin:0px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .rightside{
+        width:80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid ;
+        border-color: darkgrey;
+        margin-top: 30px;
+        
+    }
+    
+    
+    .leftblog{
+        width:50vw;
+    }
+    .segments p{
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    p.subcontent{
+        font-size: 0.9rem;
+        font-style: italic;
+        font-weight: 300;
+        color: rgb(95, 95, 95);
+        margin-bottom: 30px;
+    }
+    p.title{
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 7px;
+    }
+    
+    .author{
+        font-weight: 300;
+        font-size: 0.6rem;
+        font-family: sans-serif;
+        color: darkgrey;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    p.content{
+        font-weight: 300;
+        font-size: 0.7rem;
+        margin-bottom: 7px;
+        color: rgb(95, 95, 95);
+        text-align: justify;
+    }
+    
+    p.info{
+        font-weight: 300;
+        font-size: 0.6rem;
+        padding-bottom:4px ;
+        font-family: sans-serif;
+        color: darkgrey;
+        margin-bottom: 30px;
+    }
+    
+    img{
+         width:110px;
+         height:80px;
+         margin-left: 15px;
+    }
+    
+    p.newst{
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        background-color: burlywood;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .newstitle{
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+        
+    }
+    
+    p.newscontent{
+        font-weight: 300;
+        font-size: 0.7rem;
+        margin-bottom: 20px;
+        color: rgb(95, 95, 95);
+        
+    }
+    
+    .article a{
+        text-decoration: none;
+    }
+    
+    .btn{
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .btn a{
+        background-color: burlywood;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+        
+    }
+    
+    .jobs{
+        position: fixed;
+    }
+    
+    
+    
+    
+    
+    footer{
+        height:40vh;
+        background-color: rgb(41, 41, 41);
+        width: 90vw;
+        text-align: center;
+        color: white;
+    }
+    .footer{
+        margin-top: 40px;
+        margin-bottom: 20px;
+       
+    }
+    p.footer{
+        font-size: 1rem;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+    
+    a.subscribe{
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.7rem;
+    }
+    
+    a.subscribe:hover{
+        background-color: rgb(168, 168, 168);
+        text-decoration: none;
+    }
+    
+    .touch{
+        margin-top: 30px;
+    }
+    
+    .media{
+       margin-top: 10px;
+    }
+    .media a{
+       color: white;
+       justify-content: space-between;
+       text-decoration: none;
+       font-size: 0.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
